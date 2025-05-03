@@ -1,78 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Akacha - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Akacha - Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img class="profile-img" src="med.jpg" alt="Mohamed Akacha">
-            <h1>Mohamed Akacha</h1>
-            <p class="title">Data Scientist</p>
-        </header>
+  <!-- Background animated elements -->
+  <div class="background-animation">
+    <span></span><span></span><span></span><span></span>
+  </div>
 
-        <section class="contact">
-            <h2>Contact Information</h2>
-            <p>Email: mohamedakacha01@gmail.com</p>
-            <p>Phone: +216 53844063</p>
-            <p>Address: Tunisie, Sfax, Agareb 3030</p>
-            <p>Date of Birth: 21/10/1998</p>
-        </section>
-
-        <section class="summary">
-            <h2>Profile Summary</h2>
-            <p>Titulaire d'un Master en Data Science et Ingénierie de FSEG Sfax, avec 1 an et 6 mois d'expérience en application de l'IA à des projets concrets...</p>
-        </section>
-
-        <section class="experience">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>Data Scientist Freelance</h3>
-                <p><strong>January 2025 - Present</strong></p>
-                <p>Conception et développement d'une plateforme de gestion documentaire...</p>
-            </div>
-            <div class="job">
-                <h3>Data Scientist at Yperflow</h3>
-                <p><strong>July 2023 - January 2025</strong></p>
-                <p>Implémentation de LLMs pour la génération de texte...</p>
-            </div>
-            <!-- More jobs can be added in similar structure -->
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <p>Master in Data Science and Engineering - FSEG Sfax, September 2021 to May 2023</p>
-            <p>Bachelor's in IT Management - ISAM, Sfax, September 2019 to June 2021</p>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Science: Python, Machine Learning, NLP</li>
-                <li>Business Intelligence: SQL Server, Power BI</li>
-                <!-- Add more skills -->
-            </ul>
-        </section>
-
-        <section class="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>Arabic</li>
-                <li>French</li>
-                <li>English</li>
-            </ul>
-        </section>
-
-        <section class="interests">
-            <h2>Interests</h2>
-            <ul>
-                <li>Music</li>
-                <li>Sports</li>
-            </ul>
-        </section>
+  <div class="container">
+    <!-- Left Part: Image, Description, Contact -->
+    <div class="left-side">
+      <header class="hero" data-aos="fade-down">
+        <img src="med.jpg" alt="Mohamed Akacha" class="profile-img">
+        <h1>Mohamed Akacha</h1>
+        <p>Data Scientist passionné par l'IA Générative, les LLMs et les solutions innovantes en NLP et Computer Vision.</p>
+        <a href="mailto:mohamedakacha01@gmail.com" class="btn">Me Contacter</a>
+      </header>
     </div>
+
+    <!-- Right Part: Other Information -->
+    <div class="right-side">
+      <section data-aos="fade-right">
+        <h2 class="section-title">À propos</h2>
+        <p>Titulaire d’un Master en Data Science & Ingénierie à FSEG Sfax, avec 1 an et demi d’expérience dans l’application concrète de l’IA. Curieux, engagé, et toujours à la recherche de nouvelles solutions innovantes.</p>
+      </section>
+
+      <section data-aos="fade-left">
+        <h2 class="section-title">Expérience Professionnelle</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Data Scientist Freelance</h3>
+            <p>Développement d'une plateforme de gestion documentaire basée sur Django, LLMs et MySQL.</p>
+          </div>
+          <div class="card">
+            <h3>Yperflow</h3>
+            <p>Implémentation de LLMs, fine-tuning, pipelines RAG, OCR optimisé, classification de tableaux, agents multi-outils.</p>
+          </div>
+          <div class="card">
+            <h3>Tunisie Telecom</h3>
+            <p>Analyse comportement client, entrepôt de données, tableau de bord Power BI, prédiction LTV.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up">
+        <h2 class="section-title">Compétences</h2>
+        <div class="grid">
+          <div class="card">Python, Django, LLMs, NLP, Transformers, GPT, Mistral</div>
+          <div class="card">SQL Server, MySQL, MongoDB, Firebase</div>
+          <div class="card">Haystack, LangChain, Hugging Face, Docker, Azure, AWS</div>
+          <div class="card">Power BI, SSAS, SSIS</div>
+        </div>
+      </section>
+
+      <section data-aos="fade-left">
+        <h2 class="section-title">Formations</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Master en Sciences & Ingénierie des Données</h3>
+            <p>FSEG Sfax (2021-2023)</p>
+          </div>
+          <div class="card">
+            <h3>Licence en Informatique de Gestion</h3>
+            <p>ISAA Sfax (2019-2021)</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list">
+          <li><a href="https://coursera.org/share/13090460c36f042d2c2cd1a835621c8a" target="_blank">Analyzing Big Data with SQL - Coursera</a></li>
+          <li><a href="https://coursera.org/share/2dc3cd83a639222979b58eb50cfd4d43" target="_blank">Managing Big Data in Clusters - Coursera</a></li>
+          <li><a href="https://cdoss.tech/cert-bdmlas-mohamed-akacha/" target="_blank">Big Data ML with Apache Spark - CDOSS</a></li>
+          <li><a href="https://cdoss.tech/cert-mbdhc-mohamed-akacha/" target="_blank">Managing Big Data in Hadoop Cluster - CDOSS</a></li>
+        </ul>
+      </section>
+
+      <section data-aos="fade-right">
+        <h2 class="section-title">Langues & Intérêts</h2>
+        <div class="grid">
+          <div class="card">Langues : Arabe, Français, Anglais</div>
+          <div class="card">Centres d'intérêt : Musique, Sports, Membre actif de l’Association Roua</div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2025 Mohamed Akacha – Tous droits réservés</p>
+        <p>Email : mohamedakacha01@gmail.com | Téléphone : +216 53844063</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>

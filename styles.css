@@ -1,125 +1,111 @@
-/* Global Styles */
+:root {
+    --main-bg: #2a3d5d; /* Dark Blue Color */
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-color: #ffffff;
+    --accent: #00c6ff;
+    --bg-size: cover; /* This can be removed if you're using a solid color */
+}
+
+
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    background: var(--main-bg);
+    background-size: var(--bg-size);
+    color: var(--text-color);
+    overflow-x: hidden;
+    position: relative;
 }
 
-/* Container */
 .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out;
+.left-side, .right-side {
+    flex: 1;
+    margin: 20px;
+}
+
+.left-side {
+    flex-basis: 40%; /* Adjust the size of the left side */
+}
+
+.right-side {
+    flex-basis: 55%; /* Adjust the size of the right side */
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
     border-radius: 50%;
-    object-fit: cover;
-    animation: slideIn 1s ease-in-out;
+    margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 36px;
-    color: #2c3e50;
-    margin: 0;
+.hero {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
 }
 
-.title {
-    font-size: 24px;
-    color: #7f8c8d;
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
-/* Section Styles */
-section {
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
     margin-bottom: 30px;
-    animation: fadeInUp 1s ease-in-out;
+    text-align: center;
 }
 
-h2 {
-    font-size: 28px;
-    color: #34495e;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-h3 {
-    font-size: 24px;
-    color: #2980b9;
-    margin-bottom: 5px;
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-li {
-    margin: 5px 0;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .profile-img {
-        margin-bottom: 20px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #ccc;
 }
